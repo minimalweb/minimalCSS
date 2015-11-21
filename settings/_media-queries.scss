@@ -2,13 +2,13 @@
 // Media query settings
 // ============================================================================
 
-$breackpoint-widescreens-min:  1441px;
-$breackpoint-desktops-max:     $breackpoint-widescreens-min - 1px;
-$breackpoint-desktops-min:     1151px;
-$breackpoint-notebooks-max:    $breackpoint-desktops-min - 1px;
-$breackpoint-notebooks-min:    901px;
-$breackpoint-tablets-max:      $breackpoint-notebooks-min - 1px;
-$breackpoint-tablets-min:      701px;
-$breackpoint-phablets-max:     $breackpoint-tablets-min - 1px;
-$breackpoint-phablets-min:     481px;
-$breackpoint-phones-max:       $breackpoint-phablets-min - 1px;
+$breakpoint-widescreens-min:  1441px;
+$breakpoint-desktops-max:     $breakpoint-widescreens-min - 1px;
+$breakpoint-desktops-min:     1151px;
+$breakpoint-notebooks-max:    $breakpoint-desktops-min - 1px;
+$breakpoint-notebooks-min:    901px;
+$breakpoint-tablets-max:      $breakpoint-notebooks-min - 1px;
+$breakpoint-tablets-min:      701px;
+$breakpoint-phablets-max:     $breakpoint-tablets-min - 1px;
+$breakpoint-phablets-min:     481px;
+$breakpoint-phones-max:       $breakpoint-phablets-min - 1px;

@@ -9,20 +9,20 @@ $susy-enable-legacy-media-fallback: false !default;
 // ----------------------------------------------------------------------------
 
 $susy-media: (
-  phones:         max-width $breackpoint-phones-max,
-  phablets:       $breackpoint-phablets-min $breackpoint-phablets-max,
-  tablets:        $breackpoint-tablets-min $breackpoint-tablets-max,
-  notebooks:      $breackpoint-notebooks-min $breackpoint-notebooks-max,
-  desktops:       $breackpoint-desktops-min $breackpoint-desktops-max,
-  widescreens:    $breackpoint-widescreens-min,
-  phablets-up:    min-width $breackpoint-phablets-min,
-  phablets-down:  max-width $breackpoint-phablets-max,
-  tablets-up:     min-width $breackpoint-tablets-min,
-  tablets-down:   max-width $breackpoint-tablets-max,
-  notebooks-up:   min-width $breackpoint-notebooks-min,
-  notebooks-down: max-width $breackpoint-notebooks-max,
-  desktops-up:    min-width $breackpoint-desktops-min,
-  desktops-down:  max-width $breackpoint-desktops-max,
+  phones:         max-width $breakpoint-phones-max,
+  phablets:       $breakpoint-phablets-min $breakpoint-phablets-max,
+  tablets:        $breakpoint-tablets-min $breakpoint-tablets-max,
+  notebooks:      $breakpoint-notebooks-min $breakpoint-notebooks-max,
+  desktops:       $breakpoint-desktops-min $breakpoint-desktops-max,
+  widescreens:    $breakpoint-widescreens-min,
+  phablets-up:    min-width $breakpoint-phablets-min,
+  phablets-down:  max-width $breakpoint-phablets-max,
+  tablets-up:     min-width $breakpoint-tablets-min,
+  tablets-down:   max-width $breakpoint-tablets-max,
+  notebooks-up:   min-width $breakpoint-notebooks-min,
+  notebooks-down: max-width $breakpoint-notebooks-max,
+  desktops-up:    min-width $breakpoint-desktops-min,
+  desktops-down:  max-width $breakpoint-desktops-max,
   retina:         min-resolution 1.5dppx
 );
 
