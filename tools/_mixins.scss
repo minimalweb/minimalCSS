@@ -2,8 +2,11 @@
 // Mixins
 // ============================================================================
 
-// @mixin media($id) {
-//   @include susy-media($id) {
-//     @content;
-//   }
-// }
+@mixin pie-clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  *zoom: 1;
+}
