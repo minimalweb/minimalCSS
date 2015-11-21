@@ -1,0 +1,90 @@
+// ============================================================================
+// Spacing
+// ============================================================================
+
+
+@each $size-id, $size-value in $metric-block-size {
+
+
+  // Margins
+  // --------------------------------------------------------------------------
+
+  // All sides
+  .h-m-#{$size-id} {
+    margin: $size-value !important;
+  }
+
+  // Top margin
+  .h-mt-#{$size-id} {
+    margin-top: $size-value !important;
+  }
+
+  // Right margin
+  .h-mr-#{$size-id} {
+    margin-right: $size-value !important;
+  }
+
+  // Bottom margin
+  .h-mb-#{$size-id} {
+    margin-bottom: $size-value !important;
+  }
+
+  // Left margin
+  .h-ml-#{$size-id} {
+    margin-left: $size-value !important;
+  }
+
+  // Top and bottom margin
+  .h-mv-#{$size-id} {
+    margin-top: $size-value !important;
+    margin-bottom: $size-value !important;
+  }
+
+  // Left and right margin
+  .h-mh-#{$size-id} {
+    margin-left: $size-value !important;
+    margin-right: $size-value !important;
+  }
+
+
+  // Padding
+  // --------------------------------------------------------------------------
+
+  // All sides
+  .h-p-#{$size-id} {
+    padding: $size-value !important;
+  }
+
+  // Top padding
+  .h-pt-#{$size-id} {
+    padding-top: $size-value !important;
+  }
+
+  // Right padding
+  .h-pr-#{$size-id} {
+    padding-right: $size-value !important;
+  }
+
+  // Bottom padding
+  .h-pb-#{$size-id} {
+    padding-bottom: $size-value !important;
+  }
+
+  // Left padding
+  .h-pl-#{$size-id} {
+    padding-left: $size-value !important;
+  }
+
+  // Top and bottom padding
+  .h-pv-#{$size-id} {
+    padding-top: $size-value !important;
+    padding-bottom: $size-value !important;
+  }
+
+  // Left and right padding
+  .h-ph-#{$size-id} {
+    padding-left: $size-value !important;
+    padding-right: $size-value !important;
+  }
+
+}

@@ -1,0 +1,73 @@
+// ============================================================================
+// Susy settings
+// ============================================================================
+
+$susy-enable-legacy-media-fallback: false !default;
+
+
+// Set up media query shortcuts
+// ----------------------------------------------------------------------------
+
+$susy-media: (
+  phones:         max-width $breackpoint-phones-max,
+  phablets:       $breackpoint-phablets-min $breackpoint-phablets-max,
+  tablets:        $breackpoint-tablets-min $breackpoint-tablets-max,
+  notebooks:      $breackpoint-notebooks-min $breackpoint-notebooks-max,
+  desktops:       $breackpoint-desktops-min $breackpoint-desktops-max,
+  widescreens:    $breackpoint-widescreens-min,
+  phablets-up:    min-width $breackpoint-phablets-min,
+  phablets-down:  max-width $breackpoint-phablets-max,
+  tablets-up:     min-width $breackpoint-tablets-min,
+  tablets-down:   max-width $breackpoint-tablets-max,
+  notebooks-up:   min-width $breackpoint-notebooks-min,
+  notebooks-down: max-width $breackpoint-notebooks-max,
+  desktops-up:    min-width $breackpoint-desktops-min,
+  desktops-down:  max-width $breackpoint-desktops-max,
+  retina:         min-resolution 1.5dppx
+);
+
+
+// Set up media query fallback
+// ----------------------------------------------------------------------------
+
+@if ($susy-enable-legacy-media-fallback == true) {
+
+  $susy-media-fallback: (
+    phones:         false,
+    phablets:       false,
+    tablets:        false,
+    notebooks:      false,
+    desktops:       true,
+    widescreens:    false,
+    phablets-up:    true,
+    phablets-down:  false,
+    tablets-up:     true,
+    tablets-down:   false,
+    notebooks-up:   true,
+    notebooks-down: false,
+    desktops-up:    true,
+    desktops-down:  true,
+    retina:         false
+  );
+
+} @else {
+
+  $susy-media-fallback: (
+    phones:         false,
+    phablets:       false,
+    tablets:        false,
+    notebooks:      false,
+    desktops:       false,
+    widescreens:    false,
+    phablets-up:    false,
+    phablets-down:  false,
+    tablets-up:     false,
+    tablets-down:   false,
+    notebooks-up:   false,
+    notebooks-down: false,
+    desktops-up:    false,
+    desktops-down:  false,
+    retina:         false
+  );
+
+}

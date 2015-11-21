@@ -1,0 +1,14 @@
+// ============================================================================
+// Base styles for most common elements
+// ============================================================================
+
+html {
+  font-family: $font-stack-standard;
+  font-size: font-size(m);
+  line-height: line-height(m);
+  background-color: white;
+  color: black;
+  min-height: 100%;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+}

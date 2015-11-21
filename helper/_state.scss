@@ -1,0 +1,40 @@
+// ============================================================================
+// State helper
+// ============================================================================
+
+
+// Global display states
+// -------------------------------------------------------
+
+.is-hidden {
+  display: none !important;
+}
+
+.is-invisible {
+  opacity: 0;
+}
+
+.is-hidden-off-canvas {
+  position: absolute;
+  left: -9999px;
+}
+
+
+// Disabled elements
+// -------------------------------------------------------
+
+.is-disabled, [disabled] {
+  cursor: not-allowed !important;
+}
+
+
+// Hide elements depending on media query
+// -------------------------------------------------------
+
+@each $size-id, $size-value in $susy-media {
+  .is-hidden\@#{$size-id} {
+    @include susy-media($size-id) {
+      display: none !important;
+    }
+  }
+}

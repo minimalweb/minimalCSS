@@ -1,0 +1,22 @@
+// ============================================================================
+// Main stylesheet for legacy browsers
+// ============================================================================
+// This file only gets served to Internet Explorer 8
+// and less. Since IE8- does not support media queries
+// it gets a plain CSS file with only the desktop styles
+// assuming most IE8- users use standard sized
+// displays.
+// ============================================================================
+
+
+// Enable rendering desktop styles without media queries since legacy browsers
+// don't support them
+// ----------------------------------------------------------------------------
+
+$susy-enable-legacy-media-fallback: true;
+
+
+// Shared imports for all browsers
+// ----------------------------------------------------------------------------
+
+@import 'imports';
