@@ -23,8 +23,9 @@ Every partial needs to be assigned to one of the layers and has to live in the c
 
 ```
 ▾ settings
-  _global.scss
-  _breakpoints.scss
+  _color.scss
+  _fonts.scss
+  _media-queries.scss
 ▾ tools
   _functions.scss
   _mixins.scss
@@ -40,9 +41,8 @@ Every partial needs to be assigned to one of the layers and has to live in the c
   _progress-bar.scss
   _masthead.scss
 ▾ helper
-  _responsive.scss
   _spacing.scss
-  _layout.scss
+  _state.scss
 ```
 
 ## Class names
@@ -84,6 +84,12 @@ The following abbreviations should be used to indicate orientation:
 
 A missing orientation indicator means usually that the CSS should target all sides (top, right, bottom and left). For example: `h-m-l` adds a large margin on all sides.
 
+
+# Dependencies
+
+* [Susy Grid System][4]
+
+
 # Further reading
 
 * [Less CSS mess][1]
@@ -92,3 +98,4 @@ A missing orientation indicator means usually that the CSS should target all sid
 [1]: http://thomasbyttebier.be/blog/less-css-mess "Less CSS mess"
 [2]: https://www.youtube.com/watch?v=1OKZOV-iLj4&hd=1 "Managing CSS with ITCSS (Video)"
 [3]: http://csswizardry.com/2015/08/bemit-taking-the-bem-naming-convention-a-step-further/ "BEMIT Taking the BEM Naming Convention a Step Further"
+[4]: http://susy.oddbird.net/ "Susy"
