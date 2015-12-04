@@ -47,10 +47,10 @@ Every partial needs to be assigned to one of the layers and has to live in the c
 
 ## Class names
 
-Class names follow an [extended BEM naming convention][3]. Classes are prefixed to indicate which layer they belong to. Breakpoints are added as a suffix with an @. State classes are prefixes with `is-` or `has-` and can be global like `is-hidden` or tied to the scope of a component as an additional class `.c-collapsible-list-item.is-collapsed`.
+Class names follow an [extended BEM naming convention][3]. Classes can be prefixed to indicate which layer they belong to. Breakpoints are added as a suffix with an @. State classes are prefixes with `is-` or `has-` and can be global like `is-hidden` or tied to the scope of a component as an additional class `.Accordion__item.is-collapsed`.
 
-`o-object-name`, `o-object-name__element-name`, `o-object-name--modifier`  
-`c-component-name`, `c-component-name__element-name`, `c-component-name--modifier`  
+`object-name`, `object-name__element-name`, `object-name--modifier`  
+`component-name`, `component-name__element-name`, `component-name--modifier`  
 `h-helper-name`, `h-helper-name-size`, `is-hidden@tablets-up`
 
 ## Breakpoints
@@ -65,7 +65,8 @@ Helper classes that should only apply to certain breakpoints or breakpoint range
 
 Sizes are always written in short form like this:
 
-As a modifier to an object or component: `o-grid--s`, `c-avatar--xl`  
+As part of an object class name: `grid-s`
+as a modifier to a component: `avatar avatar--xl`  
 Or as part of a single helper class name: `h-tp-m`
 
 Usually you will have the following range of sizes: `xs, s, m, l, xl, xxl` while `m` is usually the default size.
@@ -75,7 +76,7 @@ Usually you will have the following range of sizes: `xs, s, m, l, xl, xxl` while
 
 The following abbreviations should be used to indicate orientation:
 
-`t` = top as in `h-tm-s` (add small margin at top of element)  
+`t` = top as in `h-t-m-s` (add small margin at top of element)  
 `r` = right  
 `b` = bottom  
 `l` = left  
