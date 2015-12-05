@@ -11,7 +11,7 @@ The layers are:
 3. Generic: resets, nomralize etc.
 4. Base: unclassed elements
 5. Objects: design patterns like grids and other layout scaffolds without visual styling
-6. Components: reusable chunk of UI
+6. Components: reusable chunks of UI
 7. Helper: single helper or global state classes to overwrite or extend element styles, often using !important
 
 
